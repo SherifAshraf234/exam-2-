@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loading" id="loading">
+    <div class="d-flex justify-content-center align-items-center w-100 h-100">
+      <span class="loader" id="loader"></span>
+    </div>
+      
+  </div>
+    
+<section class="nav-bar">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="imgs/logo.png" alt="" class="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="area()" id="areass">Area</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-bars"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#" id="Categories">Categories</a></li>
+                  <li><a class="dropdown-item" href="#" id="ingredients" onclick="getIngers()">Ingradients</a></li>
+                  <li><a class="dropdown-item" href="#" id="contact" onclick="contactus()">Contuct us</a></li>
+                  <li><a class="dropdown-item" href="#" id="search" onclick="getSearch()">Search</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</section>
+
+<div class="container mt-4" >
+  <div class="row g-4" id="meals" >
+  
+</div>
+
+
+
+
+
+
+     <script src="jquery-3.6.3.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="query.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
